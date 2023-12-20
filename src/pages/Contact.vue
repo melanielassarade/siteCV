@@ -1,11 +1,11 @@
 <template>
 
-    <q-section>
+    <section>
         <div id="headerExperiencesPage" class="row justify-center q-pa-md">
             <h3 class="text-uppercase">Contactez-moi</h3>
         </div>
-    </q-section>
-    <q-section class="row justify-center">
+    </section>
+    <section class="row justify-center">
         <transition appear enter-active-class="animated fadeIn slow delay-1s" leave-active-class="animated fadeOut slow delay-1s">
             <div class="q-pa-md">
                 <div style="max-width: 60vw">
@@ -40,9 +40,9 @@
                 </div>
             </div>
         </transition>
-    </q-section>
+    </section>
     <div class="text-h5 text-center">ou directement par ce formulaire :</div>
-    <q-section class="row justify-center">
+    <section class="row justify-center">
         <transition appear enter-active-class="animated fadeIn slow delay-3s" leave-active-class="animated fadeOut slow delay-3s">
             <div class="q-pa-lg full-width" style="max-width: 60vw;">
                 <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
@@ -69,7 +69,7 @@
                 </q-form>
             </div>
         </transition>
-    </q-section>
+    </section>
 </template>
 
 <script>

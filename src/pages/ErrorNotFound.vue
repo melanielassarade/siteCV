@@ -1,6 +1,6 @@
 <template>
 
-  <div class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
+  <section class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
     <div>
       <div style="font-size: 30vh">
         404
@@ -20,7 +20,7 @@
         no-caps
       />
     </div>
-  </div>
+  </section>
 
 </template>
 

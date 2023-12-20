@@ -1,6 +1,6 @@
 <template>
     
-    <q-section id="carouselMenu">
+    <section id="carouselMenu">
         <q-carousel height="80vh" animated v-model="slide" arrows navigation infinite>
             <q-carousel-slide name="one" img-src="/img/background_photo_mel.jpg" class="column">
                 <div class="absolute-left custom-caption flex flex-center">
@@ -44,9 +44,9 @@
                 </div>
             </q-carousel-slide>
         </q-carousel>
-    </q-section>
+    </section>
 
-    <q-section id="bio" class="row q-pa-xl q-col-gutter-md">
+    <section id="bio" class="row q-pa-xl q-col-gutter-md">
         <div class="col-12 col-md-4 bg-accent flex flex-middle flex-center">
             <q-img src="/img/ANIMATEAvatarSimple.gif" width="200px"/>
         </div>
@@ -56,8 +56,8 @@
                 <p style="font-size: 18px">Tout au long de ma vie professionnelle, j'ai développé des compétences<br>qui m'ont permise d'être polyvalente et évolutive.</p>
             </div>
         </div>
-    </q-section>
-    <q-section
+    </section>
+    <section
     id="origins"
     class="row q-pa-xl q-col-gutter-md parallax"
     style="background-image: url('https://cdn.pixabay.com/photo/2019/07/14/16/37/landscape-4337546_1280.jpg');">
@@ -68,7 +68,7 @@
                 que ce soit en travail d'équipe comme en autonomie,<br>je sais faire preuve d'écoute, car c'est avant tout pour les autres que je travaille.</p>
             </div>
         </div> 
-    </q-section>
+    </section>
     
 
 </template>
