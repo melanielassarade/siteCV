@@ -1,0 +1,68 @@
+{
+    "professionnellesNumeriques": [
+        {
+        "title": "Stage Développeuse Web et Web Mobile",
+        "date": "11/2023-02/2024",
+        "company": "KALISIO (11)",
+        "details": "Détails de l'expérience 1"
+        },
+        {
+        "title": "Graphiste et Web Designer indépendant",
+        "date": "10/2020-09/2022",
+        "company": "Mélanie LASSARADE (12,15,48)",
+        "details": "Détails de l'expérience 2"
+        },
+        {
+        "title": "Stage Développeuse Web et Web Mobile",
+        "date": "11/2023-02/2024",
+        "company": "KALISIO (11)",
+        "details": "Détails de l'expérience 1"
+        },
+        {
+        "title": "Graphiste et Web Designer indépendant",
+        "date": "10/2020-09/2022",
+        "company": "Mélanie LASSARADE (12,15,48)",
+        "details": "Détails de l'expérience 2"
+        },
+        {
+        "title": "Stage Développeuse Web et Web Mobile",
+        "date": "11/2023-02/2024",
+        "company": "KALISIO (11)",
+        "details": "Détails de l'expérience 1"
+        },
+        {
+        "title": "Graphiste et Web Designer indépendant",
+        "date": "10/2020-09/2022",
+        "company": "Mélanie LASSARADE (12,15,48)",
+        "details": "Détails de l'expérience 2"
+        }
+    ],
+    "autresProfessionnelles": [
+        {
+        "title": "Vendeuse en rayon frais traditionnel",
+        "date": "05/2021-12/2022",
+        "company": "LECLERC (12)",
+        "details": "Détails de l'expérience 3"
+        },
+        {
+        "title": "Factrice",
+        "date": "10/2020-05/2021",
+        "company": "LA POSTE (12)",
+        "details": "Détails de l'expérience 4"
+        }
+    ],
+    "extraProfessionnelles": [
+        {
+        "title": "Modératrice puis Administratrice Game et Social Server",
+        "date": "Depuis 03/2023",
+        "company": "Jeu 'ARK:Survival Evolved' Mobile",
+        "details": "Détails de l'expérience 5"
+        },
+        {
+        "title": "Comédienne de théâtre amateur",
+        "date": "03/2000-08/2008",
+        "company": "Association 'La Compagnie des Causses'",
+        "details": "Détails de l'expérience 6"
+        }
+    ]
+}
