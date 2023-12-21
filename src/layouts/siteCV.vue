@@ -49,7 +49,7 @@
     import { ref } from 'vue';
 
     export default defineComponent({
-        name: 'vue1',
+        name: 'siteCV',
         setup() {
             const drawerState = ref(false);
 
