@@ -38,21 +38,16 @@
     </q-page>
 </template>
 
-<script>
-
+<script setup>
+import { ref } from 'vue';
 import experiencesData from 'src/data/experiencesData.json';
 import EXPCard from 'src/components/EXPCard.vue';
 
-export default {
-    components: {
-        EXPCard,
-    },
-    data() {
-        return {
-        professionnellesNumeriques: experiencesData.professionnellesNumeriques || [],
-        autresProfessionnelles: experiencesData.autresProfessionnelles || [],
-        extraProfessionnelles: experiencesData.extraProfessionnelles || [],
-        };
-    }
+const professionnellesNumeriques = ref(experiencesData.professionnellesNumeriques || []);
+const autresProfessionnelles = ref(experiencesData.autresProfessionnelles || []);
+const extraProfessionnelles = ref(experiencesData.extraProfessionnelles || []);
+
+const components = {
+    EXPCard
 };
 </script>

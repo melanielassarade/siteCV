@@ -34,40 +34,37 @@
   </q-card>
 </template>
 
-<script>
-export default {
-  props: {
-    experience: {
-      type: Object,
-      required: true
-    },
-    category: {
-      type: String,
-      required: true
-    }
+<script setup>
+import { ref, computed } from 'vue';
+
+const props = defineProps({
+  experience: {
+    type: Object,
+    required: true
   },
-  data() {
-    return {
-      showDetails: false
-    };
-  },
-  computed: {
-    cardClass() {
-      return {
-        'bg-teal-8':
-          this.category === 'professionnellesNumeriques' ||
-          this.category === 'extraProfessionnelles',
-        'bg-deep-purple-8': this.category === 'autresProfessionnelles',
-      };
-    },
-    buttonClass() {
-      return {
-        'bg-secondary':
-          this.category === 'professionnellesNumeriques' ||
-          this.category === 'extraProfessionnelles',
-        'bg-primary': this.category === 'autresProfessionnelles',
-      }
-    }
+  category: {
+    type: String,
+    required: true
   }
-};
+});
+
+const showDetails = ref(false);
+
+const cardClass = computed(() => {
+  return {
+    'bg-teal-8':
+      props.category === 'professionnellesNumeriques' ||
+      props.category === 'extraProfessionnelles',
+    'bg-deep-purple-8': props.category === 'autresProfessionnelles',
+  };
+});
+
+const buttonClass = computed(() => {
+  return {
+    'bg-secondary':
+      props.category === 'professionnellesNumeriques' ||
+      props.category === 'extraProfessionnelles',
+    'bg-primary': props.category === 'autresProfessionnelles',
+  };
+});
 </script>
