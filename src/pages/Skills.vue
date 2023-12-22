@@ -1,10 +1,10 @@
 <template>
 
-    <q-section>
-        <q-div id="headerSkillsPage" class="row justify-center">
-            <h1>Mes compétences</h1>
-        </q-div>
-    </q-section>
+    <q-page class="q-pa-xl">
+        <q-page-section id="headerSkillsPage">
+            <h3 class="text-uppercase text-center">Compétences</h3>
+        </q-page-section>
+    </q-page>
 
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <q-page class="q-pa-xl">
         <q-page-section>
-        <h3 class="text-uppercase text-center">Expériences</h3>
+            <h3 class="text-uppercase text-center">Expériences</h3>
         </q-page-section>
         <q-page-section class="row justify-between q-py-sm">
             <h3 v-if="professionnellesNumeriques.length > 0" class="col-md-3 text-center text-secondary text-capitalize">
