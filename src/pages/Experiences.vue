@@ -3,8 +3,8 @@
         <q-page-section>
         <h3 class="text-uppercase text-center">Expériences</h3>
         </q-page-section>
-        <q-page-section>
-            <h3 v-if="professionnellesNumeriques.length > 0" class="text-secondary text-capitalize col-12 col-md-3">
+        <q-page-section class="row">
+            <h3 v-if="professionnellesNumeriques.length > 0" class="text-secondary text-capitalize q-col-12 q-col-md-3">
                 Expériences professionnelles numériques
             </h3>
             <div class="row q-col-12 q-col-md">

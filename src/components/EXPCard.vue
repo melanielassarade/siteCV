@@ -11,7 +11,7 @@
     <q-card-section>
       <!--Contenu interactif card-->
       <div class="flex justify-center">
-        <q-btn label="En savoir +" color="secondary" @click="showDetails = true" />
+        <q-btn label="En savoir +" :class="buttonClass" @click="showDetails = true" />
       </div>
       <!--Contenu "En savoir plus" -->
       <q-dialog v-model="showDetails">
@@ -54,10 +54,19 @@ export default {
   computed: {
     cardClass() {
       return {
-        'bg-teal-8': this.category === 'professionnellesNumeriques' ||
-                    this.category === 'extraProfessionnelles',
+        'bg-teal-8':
+          this.category === 'professionnellesNumeriques' ||
+          this.category === 'extraProfessionnelles',
         'bg-deep-purple-8': this.category === 'autresProfessionnelles',
       };
+    },
+    buttonClass() {
+      return {
+        'bg-secondary':
+          this.category === 'professionnellesNumeriques' ||
+          this.category === 'extraProfessionnelles',
+        'bg-primary': this.category === 'autresProfessionnelles',
+      }
     }
   }
 };
