@@ -55,9 +55,9 @@
 
             const options = [
                 { icon: 'home', label: 'Bienvenue !', to: '/', value: 'one' },
-                { icon: 'school', label: 'Formations', to: '/Trainings', value: 'two' },
+                { icon: 'list', label: 'Compétences', to: '/Skills', value: 'two' },
                 { icon: 'fact_check', label: 'Expériences', to: '/Experiences', value: 'three' },
-                { icon: 'list', label: 'Compétences', to: '/Skills', value: 'four' },
+                { icon: 'school', label: 'Formations', to: '/Trainings', value: 'four' },
                 { icon: 'mail', label: 'Contacts', to: '/Contact', value: 'five' },
             ];
 

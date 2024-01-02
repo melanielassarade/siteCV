@@ -11,11 +11,11 @@
                     </div>
                 </div>
             </q-carousel-slide>
-            <q-carousel-slide name="two" img-src="https://cdn.pixabay.com/photo/2017/07/31/22/06/computer-2561518_1280.jpg">
+            <q-carousel-slide name="two" img-src="https://cdn.pixabay.com/photo/2017/01/13/09/23/magic-cube-1976725_1280.jpg">
                 <div class="absolute-left custom-caption flex flex-center">
                     <div class="q-gutter-md">
-                        <div class="text-h2">Mes formations</div>
-                        <q-btn color="primary" to="/Trainings" label="En savoir +"/>
+                        <div class="text-h2">Mes compétences</div>
+                        <q-btn color="primary" to="/Skills" label="En savoir +"/>
                     </div>
                 </div>
             </q-carousel-slide>
@@ -27,11 +27,11 @@
                     </div>
                 </div>
             </q-carousel-slide>
-            <q-carousel-slide name="four" img-src="https://cdn.pixabay.com/photo/2017/01/13/09/23/magic-cube-1976725_1280.jpg">
+            <q-carousel-slide name="four" img-src="https://cdn.pixabay.com/photo/2017/07/31/22/06/computer-2561518_1280.jpg">
                 <div class="absolute-left custom-caption flex flex-center">
                     <div class="q-gutter-md">
-                        <div class="text-h2">Mes compétences</div>
-                        <q-btn color="primary" to="/Skills" label="En savoir +"/>
+                        <div class="text-h2">Mes formations</div>
+                        <q-btn color="primary" to="/Trainings" label="En savoir +"/>
                     </div>
                 </div>
             </q-carousel-slide>
