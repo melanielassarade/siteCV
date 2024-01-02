@@ -73,21 +73,10 @@
 
 </template>
 
-<script>
-
-    import { defineComponent } from 'vue';
+<script setup>
     import { ref } from 'vue'
 
-    export default defineComponent({
-        name: "Home",
-
-        setup () {
-            return {
-                slide: ref('one')
-            }
-        }
-    })
-
+    const slide = ref('one')
 </script>
 
 <style lang="sass" scoped>

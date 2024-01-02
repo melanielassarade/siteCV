@@ -8,7 +8,7 @@
     <section class="row justify-center">
         <transition appear enter-active-class="animated fadeIn slow delay-1s" leave-active-class="animated fadeOut slow delay-1s">
             <div class="q-pa-md">
-                <div style="max-width: 60vw">
+                <div style="max-width: 80vw">
                     <q-tabs v-model="tab" align="justify" narrow-indicator class="q-mb-lg">
                         <q-tab class="text-primary" name="mail" label="Email" />
                         <q-tab class="text-orange" name="tel" label="Téléphone" />
@@ -72,6 +72,8 @@
     </section>
 </template>
 
+<!-- Script d'origine
+    
 <script>
     import { useQuasar } from 'quasar'
     import { ref } from 'vue'
@@ -116,5 +118,43 @@
                 }
             }
         }
+    }
+</script>
+-->
+
+<!--Transformation en script setup-->
+<script setup>
+    import { useQuasar } from 'quasar'
+    import { ref } from 'vue'
+
+    const $q = useQuasar()
+    const name = ref(null)
+    const email = ref(null)
+    const accept = ref(false)
+    const tab = ref('mail')
+
+    const onSubmit = () => {
+        if (accept.value !== true) {
+        $q.notify({
+            color: 'red-5',
+            textColor: 'white',
+            icon: 'warning',
+            message: 'Vous devez accepter de communiquer vos données.'
+        })
+        } else {
+        $q.notify({
+            color: 'green-4',
+            textColor: 'white',
+            icon: 'cloud_done',
+            message: 'Message envoyé'
+        })
+        }
+    }
+
+    const onReset = () => {
+        name.value = null
+        email.value = null
+        customText.value = null
+        accept.value = false
     }
 </script>

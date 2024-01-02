@@ -63,27 +63,17 @@
 
 </template>
 
-<script>
-
-    import { defineComponent, ref } from 'vue';
+<script setup>
+    import { ref } from 'vue'
 
     const nextMorphStep = {
         btn: 'card1',
         card1: 'btn',
     }
 
-    export default defineComponent({
-        name: "Skills",
+    const morphGroupModel = ref('btn')
 
-        setup () {
-            const morphGroupModel = ref('btn')
-        
-            return {
-                morphGroupModel,
-                nextMorph () {
-                    morphGroupModel.value = nextMorphStep[ morphGroupModel.value ]
-                }
-            }
-        }
-    })
+    const nextMorph = () => {
+        morphGroupModel.value = nextMorphStep[morphGroupModel.value]
+    }
 </script>

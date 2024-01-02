@@ -39,15 +39,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import experiencesData from 'src/data/experiencesData.json';
-import EXPCard from 'src/components/EXPCard.vue';
+    import { ref } from 'vue';
+    import experiencesData from 'src/data/experiencesData.json';
+    import EXPCard from 'src/components/EXPCard.vue';
 
-const professionnellesNumeriques = ref(experiencesData.professionnellesNumeriques || []);
-const autresProfessionnelles = ref(experiencesData.autresProfessionnelles || []);
-const extraProfessionnelles = ref(experiencesData.extraProfessionnelles || []);
+    const professionnellesNumeriques = ref(experiencesData.professionnellesNumeriques || []);
+    const autresProfessionnelles = ref(experiencesData.autresProfessionnelles || []);
+    const extraProfessionnelles = ref(experiencesData.extraProfessionnelles || []);
 
-const components = {
-    EXPCard
-};
+    const components = {
+        EXPCard
+    };
 </script>

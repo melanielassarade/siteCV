@@ -24,11 +24,10 @@
 
 </template>
 
-<script>
+<script setup>
+  import { defineComponent } from 'vue'
 
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ErrorNotFound'
-})
+  const ErrorNotFound = defineComponent({
+    name: 'ErrorNotFound'
+  })
 </script>
