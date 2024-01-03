@@ -57,10 +57,7 @@
             </div>
         </div>
     </section>
-    <section
-    id="origins"
-    class="row q-pa-xl q-col-gutter-md parallax"
-    style="background-image: url('https://cdn.pixabay.com/photo/2019/07/14/16/37/landscape-4337546_1280.jpg');">
+    <section id="origins" class="row q-pa-xl q-col-gutter-md parallax" style="background-image: url('https://cdn.pixabay.com/photo/2019/07/14/16/37/landscape-4337546_1280.jpg');">
         <div class="col-12 flex flex-middle flex-center">
             <div class="text-accent text-center text-h6" style="background-color: rgba(0,0,0,0.3); border-radius: 5px;">
                 <p style="font-size: 18px" class="q-pa-lg">Originaire de l'Aveyron, je suis une femme authentique et généreuse.</p>
@@ -68,6 +65,39 @@
                 que ce soit en travail d'équipe comme en autonomie,<br>je sais faire preuve d'écoute, car c'est avant tout pour les autres que je travaille.</p>
             </div>
         </div> 
+    </section>
+    <section id="rewards" class="row q-pa-xl q-col-gutter-md">
+        <div class="col-12 col-md-8 flex flex-middle flex-center">
+            <div style="font-size: 18px">
+                <p>"Pourquoi moi ?" Voici quelques avis de d'anciens collaborateurs :</p>
+                <div>
+                    <q-chat-message
+                    bg-color="secondary" text-color="white" name="Aline, partenaire de formation au titre pro de Web Designer à BGE Sud Ouest (31)"
+                    :text="['Un véritable talent pour le travail d\'équipe, le respect des délais et de la deadline, un très bon contact et écoute du client.']"
+                    />
+                    <q-chat-message sent
+                    bg-color="primary" text-color="white" name="Laurine, infographiste référente de stage à Galzin (12)"
+                    :text="['Travailleuse investie, consciencieuse, ponctuelle, discrète et organisée.']"
+                    />
+                    <q-chat-message
+                    bg-color="secondary" text-color="white" name="Soazig, collègue et employée référente et formatrice au rayon Charcuterie-traiteur à Leclerc (12)"
+                    :text="['Très méthodique, avec de la rigueur et du dynamisme.']"
+                    />
+                    <q-chat-message sent
+                    bg-color="primary" text-color="white" name="Alicia, collègue de rayon à Leclerc (12)"
+                    :text="['Très à l\'écoute, souriante et bon contact avec le client, elle sait vendre !']"
+                    />
+                    <q-chat-message
+                    bg-color="secondary" text-color="white" name="Kévin, tuteur référent de formation au titre pro de CLVUL à la Poste (12)"
+                    :text="['Une collègue volontaire, dynamique et enjouée.']"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 bg-accent flex column flex-middle flex-center text-center text-primary">
+            <div class="text-h1"><i class="bi bi-hand-thumbs-up-fill"/><i class="bi bi-patch-check-fill"/></div>
+            <div class="text-h4">Collaboratrice<br>certifiée<br>conforme !</div>
+        </div>
     </section>
     
 
