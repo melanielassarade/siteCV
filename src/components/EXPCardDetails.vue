@@ -1,8 +1,20 @@
 <template>
     <div>
-        <div class="text-h6">Détails de l'expérience :</div> 
-        <p><span>Missions :</span>{{ details.missions }}</p>
-        <p><span>Objectifs :</span>{{ details.goals }}</p>
-        <p><span>Compétences développées:</span>{{ details.developed-skills }}</p>
+        <template v-for="(detail, index) in details" :key="index">
+            <p><span class="text-bold text-primary">Missions : </span>{{ detail.missions }}</p>
+            <p><span class="text-bold text-primary">Objectifs : </span>{{ detail.goals }}</p>
+            <p><span class="text-bold text-primary">Compétences développées: </span>{{ detail.developedSkills }}</p>
+        </template>
     </div>
 </template>
+
+<script setup>
+    import { defineProps } from 'vue';
+
+    const props = defineProps({
+        details: {
+            type: Array,
+            required: true
+        }
+    });
+</script>

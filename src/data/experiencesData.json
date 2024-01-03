@@ -8,7 +8,7 @@
                 {
                     "missions": "Création de thèmes dans la solution Keycloak et développement de tests dans le kit de développement de Kalisio",
                     "goals": "Découverte et customisation de l'outils Keycloak pour répondre aux besoins clients, déccouverte et compréhension du fonctionnement du KDK, brique centrale des solutions de Kalisio.",
-                    "developed-skills": "Keycloak, HTML templates, CSS, SSO, Node.js, Vue.js, Quasar Framework, Puppeteer"
+                    "developedSkills": "Keycloak, HTML templates, CSS, SSO, Node.js, Vue.js, Quasar Framework, Puppeteer"
                 }
             ]
         },
@@ -21,7 +21,7 @@
                 {
                     "missions": "Création et réalisation de sites web et de designs graphiques à destination principalement du web, notamment pour l'artiste sculpteur sur cuir David Borrull et l'office de tourisme de la Cavalerie.",
                     "goals": "Ecouter et répondre aux besoins clients, leur proposer des solutions adaptées à leurs exigences et à leurs identités.",
-                    "developed-skills": "Keycloak, HTML templates, CSS, SSO, Node.js, Vue.js, Quasar Framework, Puppeteer"
+                    "developedSkills": "HTML/CSS template, Wordpress, Illustrator, Photoshop, gestion et chiffrage d'un projet web"
                 }
             ]
         }
@@ -32,14 +32,26 @@
             "title": "Vendeuse en rayon frais traditionnel",
             "date": "05/2021-12/2022",
             "company": "LECLERC (12)",
-            "details": "Détails de l'expérience 3"
+            "details": [
+                {
+                    "missions": "",
+                    "goals": "",
+                    "developedSkills": ""
+                }
+            ]
         },
 
         {
             "title": "Factrice",
             "date": "10/2020-05/2021",
             "company": "LA POSTE (12)",
-            "details": "Détails de l'expérience 4"
+            "details": [
+                {
+                    "missions": "",
+                    "goals": "",
+                    "developedSkills": ""
+                }
+            ]
         }
     ],
 
@@ -47,15 +59,27 @@
         {
             "title": "Modératrice puis Administratrice Game et Social Server",
             "date": "Depuis 03/2023",
-            "company": "Jeu 'ARK:Survival Evolved' Mobile",
-            "details": "Détails de l'expérience 5"
+            "company": "Jeu \"ARK:Survival Evolved\" Mobile",
+            "details": [
+                {
+                    "missions": "",
+                    "goals": "",
+                    "developedSkills": ""
+                }
+            ]
         },
 
         {
             "title": "Comédienne de théâtre amateur",
             "date": "03/2000-08/2008",
-            "company": "Association 'La Compagnie des Causses'",
-            "details": "Détails de l'expérience 6"
+            "company": "Association \"La Compagnie des Causses\"",
+            "details": [
+                {
+                    "missions": "",
+                    "goals": "",
+                    "developedSkills": ""
+                }
+            ]
         }
     ]
 }

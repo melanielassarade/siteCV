@@ -11,9 +11,9 @@
     <q-card-section>
       <!--Contenu interactif card-->
       <div class="flex justify-center">
-        <q-btn label="En savoir +" :class="buttonClass" @click="showDetails = true" />
+        <q-btn label="En savoir +" :class="buttonClass" @click="showDetails = true"/>
       </div>
-      <!--Contenu "En savoir plus" -->
+
       <q-dialog v-model="showDetails">
         <q-card style="width:80vw;">
           <q-card-section class="flex justify-between">
@@ -24,9 +24,9 @@
               <q-btn flat label="Fermer" color="secondary" @click="showDetails = false" />
             </div>
           </q-card-section>
-
+    
           <q-card-section class="q-pt-none">
-            {{ experience.details }}
+            <EXPCardDetails v-if="showDetails" :details="experience.details" />
           </q-card-section>
         </q-card>
       </q-dialog>
@@ -35,36 +35,42 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+  import { ref, computed } from 'vue';
+  import EXPCardDetails from 'src/components/EXPCardDetails.vue';
 
-const props = defineProps({
-  experience: {
-    type: Object,
-    required: true
-  },
-  category: {
-    type: String,
-    required: true
-  }
-});
+  const props = defineProps({
+    experience: {
+      type: Object,
+      required: true
+    },
+    category: {
+      type: String,
+      required: true
+    }
+  });
 
-const showDetails = ref(false);
+  const showDetails = ref(false);
 
-const cardClass = computed(() => {
-  return {
-    'bg-teal-8':
-      props.category === 'professionnellesNumeriques' ||
-      props.category === 'extraProfessionnelles',
-    'bg-deep-purple-8': props.category === 'autresProfessionnelles',
+  const cardClass = computed(() => {
+    return {
+      'bg-teal-8':
+        props.category === 'professionnellesNumeriques' ||
+        props.category === 'extraProfessionnelles',
+      'bg-deep-purple-8': props.category === 'autresProfessionnelles',
+    };
+  });
+
+  const buttonClass = computed(() => {
+    return {
+      'bg-secondary':
+        props.category === 'professionnellesNumeriques' ||
+        props.category === 'extraProfessionnelles',
+      'bg-primary': props.category === 'autresProfessionnelles',
+    };
+  });
+
+  const components = {
+      EXPCardDetails
   };
-});
 
-const buttonClass = computed(() => {
-  return {
-    'bg-secondary':
-      props.category === 'professionnellesNumeriques' ||
-      props.category === 'extraProfessionnelles',
-    'bg-primary': props.category === 'autresProfessionnelles',
-  };
-});
 </script>

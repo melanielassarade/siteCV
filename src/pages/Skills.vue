@@ -20,74 +20,24 @@
                 <template v-slot:after>
                     <q-tab-panels v-model="tab" animated swipeable vertical transition-prev="jump-up" transition-next="jump-up">
                         <q-tab-panel name="know">
-                            <div class="text-h5 q-mb-md">Mes connaissances</div>
-                            <q-list bordered separator>
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Design</q-item-label>
-                                        <q-item-label>Logiciels de création graphique et de mise en page Adobe (Photoshop, Illustrator, Indesign, XD, Animate)</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Développement Web</q-item-label>
-                                        <q-item-label>Langages de présentation et de programmation HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            </q-list>
+                            <div v-if="knowSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-lightbulb"/> Mes connaissances</div>
+                            <template v-for="(skills, index) in knowSkills" :key="'knowSkill' + index">
+                                <SkillsList :skill="skills" />
+                            </template>
                         </q-tab-panel>
                 
                         <q-tab-panel name="do">
-                            <div class="text-h5 q-mb-md">Mes compétences opérationnelles </div>
-                            <q-list bordered separator>
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Développement Web</q-item-label>
-                                        <q-item-label>Tests unitaires d'applications web avec Puppeteer (bibliothèque Node.js)</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Développement Web</q-item-label>
-                                        <q-item-label>Item with caption</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">OVERLINE</q-item-label>
-                                        <q-item-label>Item with caption</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            </q-list>
+                            <div v-if="doSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-gears"/> Mes compétences opérationnelles </div>
+                            <template v-for="(skills, index) in doSkills" :key="'doSkill' + index">
+                                <SkillsList :skill="skills" />
+                            </template>
                         </q-tab-panel>
                 
                         <q-tab-panel name="be">
-                            <div class="text-h5 q-mb-md">Mes compétences comportementales</div>
-                            <q-list bordered separator>
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Relationnel</q-item-label>
-                                        <q-item-label>J'ai le sens du travail d'équipe, et sais former et diriger une équipe au besoin.</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Professionnel</q-item-label>
-                                        <q-item-label>Autonome et persévérante, je sais m'adapter et faire preuve d'esprit critique et de résilience sur mon travail.</q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            
-                                <q-item v-ripple>
-                                    <q-item-section>
-                                        <q-item-label overline class="text-uppercase">Emotionnel</q-item-label>
-                                        <q-item-label>Je reste à l'écoute de mon équipe ou du client. </q-item-label>
-                                    </q-item-section>
-                                </q-item>
-                            </q-list>
+                            <div v-if="beSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-users"/> Mes compétences comportementales</div>
+                            <template v-for="(skills, index) in beSkills" :key="'beSkill' + index">
+                                <SkillsList :skill="skills" />
+                            </template>
                         </q-tab-panel>
                     </q-tab-panels>
                 </template>
@@ -99,9 +49,18 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
-    
-    const tab = ref('know')
-    const splitterModel = ref(20)
+    import { ref } from 'vue';
+    import skillsData from 'src/data/skillsData.json';
+    import SkillsList from 'src/components/SkillsList.vue';
 
+    const tab = ref('know');
+    const splitterModel = ref(20);
+
+    const knowSkills = ref(skillsData.knowSkills || []);
+    const doSkills = ref(skillsData.doSkills || []);
+    const beSkills = ref(skillsData.beSkills || []);
+
+    const components = {
+        SkillsList
+    };
 </script>

@@ -1,0 +1,38 @@
+{
+    "knowSkills": [
+        {
+            "category": "Design",
+            "description": "Logiciels de création graphique et de mise en page Adobe (Photoshop, Illustrator, Indesign, XD, Animate), règles de typographie, de mise en page et d'utilisation des couleurs, histoire de l'art, ..."
+        },
+        {
+            "category": "Développement Web",
+            "description": "Langages de présentation et de programmation HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony"
+        }
+    ],
+
+    "doSkills": [
+        {
+            "category": "Développement Web",
+            "description": "Tests unitaires d'applications web avec Puppeteer (bibliothèque Node.js)"
+        },
+        {
+            "category": "Développement Web",
+            "description": "Création de sites web complet à partir d'un cahier des charges via le CMS Wordpress"
+        }
+    ],
+
+    "beSkills": [
+        {
+            "category": "Relationnel",
+            "description": "J'ai le sens du travail d'équipe, et sais former et diriger une équipe au besoin."
+        },
+        {
+            "category": "Professionnel",
+            "description": "Autonome et persévérante, je sais m'adapter et faire preuve d'esprit critique et de résilience sur mon travail."
+        },
+        {
+            "category": "Emotionnel",
+            "description": "Je suis à l'écoute de mon équipe ou du client, je ne perd pas mon sang-froid face à la difficulté et sais prendre du recul pour résoudre les problèmes complexes."
+        }
+    ]
+}
