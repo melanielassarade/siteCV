@@ -22,23 +22,17 @@
                             <q-tab-panels v-model="tab" animated swipeable vertical transition-prev="jump-up" transition-next="jump-up">
                                 <q-tab-panel name="know">
                                     <div v-if="knowSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-lightbulb"/> Mes connaissances</div>
-                                    <template v-for="(skills, index) in knowSkills" :key="'knowSkill' + index">
-                                        <SkillsList :skill="skills" />
-                                    </template>
+                                    <SkillsList :skills="knowSkills" />
                                 </q-tab-panel>
                         
                                 <q-tab-panel name="do">
-                                    <div v-if="doSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-gears"/> Mes compétences opérationnelles </div>
-                                    <template v-for="(skills, index) in doSkills" :key="'doSkill' + index">
-                                        <SkillsList :skill="skills" />
-                                    </template>
+                                    <div v-if="doSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-gears"/> Mon savoir-faire</div>
+                                    <SkillsList :skills="doSkills" />
                                 </q-tab-panel>
-                        
+                    
                                 <q-tab-panel name="be">
-                                    <div v-if="beSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-users"/> Mes compétences comportementales</div>
-                                    <template v-for="(skills, index) in beSkills" :key="'beSkill' + index">
-                                        <SkillsList :skill="skills" />
-                                    </template>
+                                    <div v-if="beSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-users"/> Mon savoir-être</div>
+                                    <SkillsList :skills="beSkills" />
                                 </q-tab-panel>
                             </q-tab-panels>
                         </template>
@@ -50,6 +44,7 @@
 </template>
 
 <script setup>
+
     import { ref } from 'vue';
     import skillsData from 'src/data/skillsData.json';
     import SkillsList from 'src/components/SkillsList.vue';
@@ -61,7 +56,4 @@
     const doSkills = ref(skillsData.doSkills || []);
     const beSkills = ref(skillsData.beSkills || []);
 
-    const components = {
-        SkillsList
-    };
 </script>

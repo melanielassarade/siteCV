@@ -69,8 +69,5 @@
     };
   });
 
-  const components = {
-      EXPCardDetails
-  };
 
 </script>
