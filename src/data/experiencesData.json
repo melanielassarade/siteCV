@@ -24,12 +24,51 @@
                     "developedSkills": "HTML/CSS template, Wordpress, Illustrator, Photoshop, gestion et chiffrage d'un projet web, organisation, autonomie, relation clientèle"
                 }
             ]
+        },
+
+        {
+            "title": "Infographiste et webdesigner",
+            "date": "11/2019-02/2020",
+            "company": "Service communication et marketing de la Maison GALZIN (12)",
+            "details": [
+                {
+                    "missions": "Réalisation de contenus web à destination des réseaux sociaux et de PLV à destination des magasins de l'enseigne.",
+                    "goals": "Dynamiser les pages facebook et instagram de l'enseigne Galzin, Victoire et Charly&Food, répondre aux besoins de communication des 22 boutiques de l'enseigne, veille technologique sur les concurrents en terme de communication et de contenu de site web, veille sur les avis client sur les pages Google des différents magasins.",
+                    "developedSkills": "Réactivité, adaptabilité, organisation, veille concurrentielle et commerciale, créativité."
+                }
+            ]
+        },
+
+        {
+            "title": "Infographiste commerciale et designer textile",
+            "date": "04/2018-04/2019",
+            "company": "Bureau de création de textiles décoratifs MOMENTO DECO (48)",
+            "details": [
+                {
+                    "missions": "Réalisation de designs produit pour coussins décoratifs au sein de l'équipe de création (3 personnes), supports promotionnels à destination de la boutique (affiche et carte de visite) et supports commerciaux pour la clientèle professionnelle, mise à jour du logiciel de vente des commerciaux.",
+                    "goals": "Proposer des nouveaux produits pour les collections à venir, communiquer sur les nouveautés de l'enseigne, et veiller à la mise à jour des infos (stock, prix, description, photos,...) des produits disponibles pour la vente aux professionnels.",
+                    "developedSkills": "Adaptabilité, réactivité, créativité, travail d'équipe, force de proposition, veille sur les tendances, respect des délais et du cahier des charges."
+                }
+            ]
+        },
+
+        {
+            "title": "Graphiste illustratrice web",
+            "date": "07/2008-10/2008",
+            "company": "Studio de création de jeux en ligne SARL Feerik (34)",
+            "details": [
+                {
+                    "missions": "Création de contenus graphiques destinés à un support web ludique (jeux videos PC OhMyDollz! et PoneyVallée).",
+                    "goals": "Proposer de nouveaux contenus à destination d'un jeune public (8/16ans) en respectant les modèles de base.",
+                    "developedSkills": "Créativité, respect des délais, travail en présentiel et distanciel, force de proposition, veille sur les tendances graphiques, adaptabilité"
+                }
+            ]
         }
     ],
 
     "autresProfessionnelles": [
         {
-            "title": "Vendeuse en rayon frais traditionnel",
+            "title": "Vendeuse en rayon frais traditionnel Charcuterie Traiteur",
             "date": "05/2021-12/2022",
             "company": "LECLERC (12)",
             "details": [
@@ -49,7 +88,59 @@
                 {
                     "missions": "Tri et distribution du courrier et des colis aux particuliers et aux professionnels, à pied et en véhicule utilitaire léger, en zone urbaine comme rurale.",
                     "goals": "Assurer le service de distribution dans un délai défini, en respectant les règles de sécurité.",
-                    "developedSkills": "Utilisation d'un vocabulaire spécifique à la Poste, utilisation de casiers de tri, manipulation et rangement de chariot de courrier et colis, classification selon un plan de tournée, lecture d'un plan de tournée, relation client, endurance, rapidité, organisation."
+                    "developedSkills": "Utilisation d'un vocabulaire spécifique à la Poste, utilisation de casiers de tri, manipulation et chargement de chariot de courrier et colis, utilisation d'un outil numérique pour la réalisation des livraisons (FACTEO), conduite sur véhicule utilitaire léger, classification selon un plan de tournée, lecture d'un plan de tournée, relation client, endurance, rapidité, organisation."
+                }
+            ]
+        },
+
+        {
+            "title": "Vendeuse en rayon traditionnel Crèmerie",
+            "date": "07/2013-03/2016",
+            "company": "LECLERC (12)",
+            "details": [
+                {
+                    "missions": "Réception et mise en rayon de marchandises, découpe et vente de fromage, mise en barquette pour le libre-service et étiquetage produits, commandes sur cadenciers et en direct, entretien et vente de produits frais en rayon crèmerie traditionnelle de grande surface.",
+                    "goals": "Respecter les normes d'hygiène, de traçabilité et de sécurité, tout en assurant la qualité et le respect des process en place pour la préparation et cuisson des aliments, ainsi que pour la mise en place des vitrines réfrigérées et de la chambre froide. Assurer également la vente et répondre aux demandes client.",
+                    "developedSkills": "Découpe avec des couteaux professionnels et emballage de produits frais, manipulation de machines de pesée, gestes et postures de sécurité, méthodes d'inventaires, préparation de commandes, organisation des stocks en respectant les DLC et les types de produits, utilisation d'une filmeuse et manipulations de produits détergents pour le nettoyage et la désinfection selon les process mis en place pour l'hygiène, formation des employés saisonnier pendant les périodes de plein activité, adaptabilité, travail d'équipe, relation clientèle et travail sous pression."
+                }
+            ]
+        },
+
+        {
+            "title": "Hôtesse de caisse",
+            "date": "03/2013-06/2013",
+            "company": "LECLERC (12)",
+            "details": [
+                {
+                    "missions": "Tenue et comptage de caisse.",
+                    "goals": "Veiller au bon enregistrement et aux prix des articles, accueillir une masse clientèle quotidienne de grande surface (environ 200 ticket par service)",
+                    "developedSkills": "Rigueur, adaptabilité, travail d'équipe, relation clientèle et gestion du stress."
+                }
+            ]
+        },
+
+        {
+            "title": "Agent administratif",
+            "date": "10/2012-11/2012",
+            "company": "Conservation des hypothèques de Millau (12)",
+            "details": [
+                {
+                    "missions": "Contrôle de 1ere main des actes soumis à la publication à la conservation des hypothèques.",
+                    "goals": "Vérification des actes, corrections et recherches des infos enregistrées en base de données lors de l'enregistrement.",
+                    "developedSkills": "Patience, utilisation de logiciel de saisie, organisation, assiduité, autonomie."
+                }
+            ]
+        },
+
+        {
+            "title": "Employée polyvalente de restauration (en poste saisonnier)",
+            "date": "07/2006-09/2011",
+            "company": "Relais autoroutier Millau Larzac (12)",
+            "details": [
+                {
+                    "missions": "Réception et mise en rayon de marchandises en boutique, préparation froide et cuisson de pain, vente en point chaud et sandwicherie, service en bar.",
+                    "goals": "Respecter les normes d'hygiène, de traçabilité et de sécurité, tout en assurant la qualité et le respect des process en place pour la préparation et cuisson des aliments, ainsi que pour la mise en place des vitrines réfrigérées et de la chambre froide. Assurer également la vente et répondre aux demandes client.",
+                    "developedSkills": "Tenue et comptage de caisse, expérience et relation clientèle de passage et en restauration rapide, travail sous pression, organisation, travail d'équipe."
                 }
             ]
         }
