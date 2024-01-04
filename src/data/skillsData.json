@@ -2,11 +2,15 @@
     "knowSkills": [
         {
             "category": "Design",
-            "description": "Logiciels de création graphique et de mise en page Adobe (Photoshop, Illustrator, Indesign, XD, Animate), règles de typographie, de mise en page et d'utilisation des couleurs, histoire de l'art, ..."
+            "description": "Logiciels de création graphique et de mise en page Adobe (Photoshop, Illustrator, Indesign, XD, Animate)"
         },
         {
             "category": "Développement Web",
             "description": "Langages de présentation et de programmation HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony"
+        },
+        {
+            "category": "Communication",
+            "description": "Histoire de l'art et de l'image"
         }
     ],
 
@@ -18,17 +22,21 @@
         {
             "category": "Développement Web",
             "description": "Création de sites web complet à partir d'un cahier des charges via le CMS Wordpress"
+        },
+        {
+            "category": "Communication",
+            "description": "Conception de visuels à destination de la publicité, avec les règles de typographie, de colorimétrie, et de mise en page."
         }
     ],
 
     "beSkills": [
         {
             "category": "Relationnel",
-            "description": "J'ai le sens du travail d'équipe, et sais former et diriger une équipe au besoin."
+            "description": "J'ai le sens du travail d'équipe, et sais former et diriger une équipe au besoin. Au fil de mes expériences, j'ai développé un bon relationnel client et sais l'impliquer dans les projets qu'il me confie, instaurant une relation de confiance."
         },
         {
             "category": "Professionnel",
-            "description": "Autonome et persévérante, je sais m'adapter et faire preuve d'esprit critique et de résilience sur mon travail."
+            "description": "Autonome et persévérante, je sais m'adapter et m'organiser sur mon travail. Ouverte au dialogue, j'accepte volontiers la critique constructive, et respecte les directives que l'on me donne."
         },
         {
             "category": "Emotionnel",

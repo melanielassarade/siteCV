@@ -8,7 +8,7 @@
                 {
                     "missions": "Création de thèmes dans la solution Keycloak et développement de tests dans le kit de développement de Kalisio",
                     "goals": "Découverte et customisation de l'outils Keycloak pour répondre aux besoins clients, déccouverte et compréhension du fonctionnement du KDK, brique centrale des solutions de Kalisio.",
-                    "developedSkills": "Keycloak, HTML templates, CSS, SSO, Node.js, Vue.js, Quasar Framework, Puppeteer"
+                    "developedSkills": "Keycloak, HTML templates, CSS, SSO, Node.js, Vue.js, Quasar Framework, Puppeteer, résilience, résolution de problèmes complexes, autonomie et travail d'équipe"
                 }
             ]
         },
@@ -21,7 +21,7 @@
                 {
                     "missions": "Création et réalisation de sites web et de designs graphiques à destination principalement du web, notamment pour l'artiste sculpteur sur cuir David Borrull et l'office de tourisme de la Cavalerie.",
                     "goals": "Ecouter et répondre aux besoins clients, leur proposer des solutions adaptées à leurs exigences et à leurs identités.",
-                    "developedSkills": "HTML/CSS template, Wordpress, Illustrator, Photoshop, gestion et chiffrage d'un projet web"
+                    "developedSkills": "HTML/CSS template, Wordpress, Illustrator, Photoshop, gestion et chiffrage d'un projet web, organisation, autonomie, relation clientèle"
                 }
             ]
         }
@@ -34,9 +34,9 @@
             "company": "LECLERC (12)",
             "details": [
                 {
-                    "missions": "",
-                    "goals": "",
-                    "developedSkills": ""
+                    "missions": "Préparation, entretien et vente de produits frais en rayon charcuterie traditionnelle de grande surface.",
+                    "goals": "Respecter les normes d'hygiène, de traçabilité et de sécurité, tout en assurant la qualité et le respect des process en place pour la préparation et cuisson des aliments, ainsi que pour la mise en place des vitrines réfrigérées et de la chambre froide. Assurer également la vente et répondre aux demandes client.",
+                    "developedSkills": "Découpe sur trancheuse ou avec des couteaux professionnels et emballage de produits frais, manipulation de machines de pesée, gestes et postures de sécurité, méthodes d'inventaires, préparation de commandes, organisation des stocks en respectant les DLC et les types de produits, utilisation d'une rôtissoire et manipulations de produits détergents pour le nettoyage et la désinfection selon les process mis en place pour l'hygiène, formation des employés saisonnier pendant les périodes de plein activité, adaptabilité, travail d'équipe, relation clientèle et travail sous pression. "
                 }
             ]
         },
@@ -47,9 +47,9 @@
             "company": "LA POSTE (12)",
             "details": [
                 {
-                    "missions": "",
-                    "goals": "",
-                    "developedSkills": ""
+                    "missions": "Tri et distribution du courrier et des colis aux particuliers et aux professionnels, à pied et en véhicule utilitaire léger, en zone urbaine comme rurale.",
+                    "goals": "Assurer le service de distribution dans un délai défini, en respectant les règles de sécurité.",
+                    "developedSkills": "Utilisation d'un vocabulaire spécifique à la Poste, utilisation de casiers de tri, manipulation et rangement de chariot de courrier et colis, classification selon un plan de tournée, lecture d'un plan de tournée, relation client, endurance, rapidité, organisation."
                 }
             ]
         }
@@ -62,9 +62,9 @@
             "company": "Jeu \"ARK:Survival Evolved\" Mobile",
             "details": [
                 {
-                    "missions": "",
-                    "goals": "",
-                    "developedSkills": ""
+                    "missions": "Administration d'un serveur privé de jeu mobile et d'un serveur de discussion, ainsi que la modération d'une communauté allant jusqu'à une centaine de joueurs de 13 à 58 ans.",
+                    "goals": "Assurer le bon fonctionnement et la disponibilité du jeu, ainsi que le respect du jeu et des joueurs autant en jeu que sur le serveur de discussion.",
+                    "developedSkills": "Paramètrage et maintenance d'un serveur de jeu mobile sur Nitrado, paramètrage et animation d'un serveur de discussion sur Discord, veille et communication sur les évènements du jeu, organisation d'évènements en interne, création de contenu tels que le règlement interne et articles sur le gameplay, patience, réactivité, créativité, leadership."
                 }
             ]
         },
@@ -75,9 +75,9 @@
             "company": "Association \"La Compagnie des Causses\"",
             "details": [
                 {
-                    "missions": "",
-                    "goals": "",
-                    "developedSkills": ""
+                    "missions": "Jouer des rôles de composition sous la directive d'un metteur en scène dans le cadre d'un théâtre.",
+                    "goals": "Retenir un texte et le retranscrire avec les émotions demandées, respecter la mise en scène définie et apporter des suggestions pour améliorer une scène ou son personnage.",
+                    "developedSkills": "Prise de parole en public, gestion du stress, travail d'équipe, prise de confiance, assiduité, écoute des consignes."
                 }
             ]
         }
