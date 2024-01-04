@@ -6,7 +6,7 @@
         },
         {
             "category": "Développement Web",
-            "description": "Langages de présentation et de programmation HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony"
+            "description": "Langages d'affichage et de programmation web HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony/Quasar"
         },
         {
             "category": "Communication",
@@ -16,16 +16,20 @@
 
     "doSkills": [
         {
-            "category": "Développement Web",
-            "description": "Tests unitaires d'applications web avec Puppeteer (bibliothèque Node.js)"
+            "category": "Communication, Multimédia",
+            "description": "Animer les éléments d'une image (restitution des mouvements image par image, définition des trajectoires), concevoir et réaliser des éléments graphiques et visuels, concevoir l'identité visuelle de la marque, concevoir un site web, concevoir une plaquette ou un dépliant publicitaire, définir l'identité visuelle d'un site web,définir la composition d'éléments graphiques, élaborer une charte graphique, réaliser des éléments graphiques de composition à l'aide d'outils graphiques informatiques, réaliser un panneau d'exposition, présentoir, stand, saisir le texte ou réaliser la maquette à partir du manuscrit, pré-projet, brouillon, traduire un concept ou un script en représentation visuelle, traiter des images numériques (colorimétrie, cadrage etc.)."
         },
         {
-            "category": "Développement Web",
-            "description": "Création de sites web complet à partir d'un cahier des charges via le CMS Wordpress."
+            "category": "Organisation",
+            "description": "Analyser les résultats d'un projet, assurer la gestion de base de logiciels ou matériels numériques, contrôler la conformité des données ou des documents, corriger et mettre en forme un document, créer des documents numériques,numériser des documents, médias ou supports techniques,réaliser une veille documentaire, sélectionner des documents et images dans une base documentaire, utiliser les outils bureautiques."
         },
         {
-            "category": "Communication",
-            "description": "Conception de visuels à destination de la publicité, avec les règles de typographie, de colorimétrie, et de mise en page."
+            "category": "Recherche, innovation",
+            "description": "Concevoir un modèle, un prototype, concevoir une signalétique, créer, élaborer et identifier des concepts innovants, dessiner des avant-projets (roughs, croquis) à partir du concept, des thèmes définis, rédiger un cahier des charges, des spécifications techniques."
+        },
+        {
+            "category": "Relation client",
+            "description": "Assurer un accueil téléphonique, identifier, traiter une demande client, recueillir et analyser les besoins client, remettre la commande au client (service à l'assiette, emballage à emporter, plateau, ...), répondre aux attentes d'un client."
         }
     ],
 
