@@ -5,13 +5,13 @@
                 <h3 class="text-uppercase text-center">Expériences</h3>
             </transition>
         </q-page-section>
-        <q-page-section class="row justify-between q-py-sm">
+        <q-page-section class="row justify-center q-py-sm">
             <transition appear enter-active-class="animated fadeIn slow delay-1s">
-                <h4 v-if="professionnellesNumeriques.length > 0" class="col-md-3 q-px-md text-center text-secondary text-capitalize">
+                <h4 v-if="professionnellesNumeriques.length > 0" class="col-lg-2 q-px-sm text-center text-secondary text-capitalize">
                     Expériences professionnelles numériques
                 </h4>
             </transition>
-            <div class="col-md row justify-start q-gutter-md">
+            <div class="col-lg row justify-center q-gutter-sm">
                 <transition-group appear enter-active-class="animated flipInY slow delay-2s">
                     <template v-for="(experience, index) in professionnellesNumeriques" :key="'expNumérique-' + index">
                         <EXPCard :experience="experience" category="professionnellesNumeriques" />
@@ -19,13 +19,13 @@
                 </transition-group>
             </div>
         </q-page-section>
-        <q-page-section class="row justify-between q-py-sm">
+        <q-page-section class="row justify-center q-py-sm">
             <transition appear enter-active-class="animated fadeIn slow delay-1s">
-                <h4 v-if="autresProfessionnelles.length > 0" class="col-md-3 q-px-md text-center text-primary text-capitalize">
+                <h4 v-if="autresProfessionnelles.length > 0" class="col-lg-2 q-px-sm text-center text-primary text-capitalize">
                     Autres expériences professionnelles
                 </h4>
             </transition>
-            <div class="col-md row justify-start q-gutter-md">
+            <div class="col-lg row justify-center q-gutter-sm">
                 <transition-group appear enter-active-class="animated flipInY slow delay-2s">
                     <template v-for="(experience, index) in autresProfessionnelles" :key="'expAutre-' + index">
                         <EXPCard :experience="experience" category="autresProfessionnelles"/>
@@ -33,13 +33,13 @@
                 </transition-group>
             </div>
         </q-page-section>
-        <q-page-section class="row justify-between q-py-sm">
+        <q-page-section class="row justify-center q-py-sm">
             <transition appear enter-active-class="animated fadeIn slow delay-1s">
-                <h4 v-if="extraProfessionnelles.length > 0" class="col-md-3 q-px-md text-center text-secondary text-capitalize">
+                <h4 v-if="extraProfessionnelles.length > 0" class="col-lg-2 q-px-sm text-center text-secondary text-capitalize">
                     Expériences extra-professionnelles
                 </h4>
             </transition>
-                <div class="col-md row justify-start q-gutter-md">
+                <div class="col-lg row justify-center q-gutter-sm">
                     <transition-group appear enter-active-class="animated flipInY slow delay-2s">
                         <template v-for="(experience, index) in extraProfessionnelles" :key="'expExtra-' + index">
                             <EXPCard :experience="experience" category="extraProfessionnelles"/>
