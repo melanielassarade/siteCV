@@ -2,15 +2,19 @@
     "knowSkills": [
         {
             "category": "Design",
-            "description": "Logiciels de création graphique et de mise en page Adobe (Photoshop, Illustrator, Indesign, XD, Animate)"
+            "description": "Graphisme, harmonisation des couleurs, palette graphique, storyboard, colorimétrie, typographie, chaîne graphique, conception et Dessin Assistés par Ordinateur (CAO/DAO), publication Assistée par Ordinateur (PAO), Suite Adobe Creative (Illustrator, Indesign, Photoshop, XD, Animate), "
         },
         {
             "category": "Développement Web",
-            "description": "Langages d'affichage et de programmation web HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony/Quasar"
+            "description": "Arborescence d'un site web, langages d'affichage et de programmation web HTML/CSS/JS/PHP/NodeJS, framework Bootstrap/React/Symfony/Quasar, technologies de l'accessibilité numérique,"
         },
         {
             "category": "Communication",
-            "description": "Histoire de l'art et de l'image"
+            "description": "Communication visuelle, Histoire de l'art et de l'image, argumentation commerciale"
+        },
+        {
+            "category": "Autres",
+            "description": "Gestes et postures de manutention, gestion administrative"
         }
     ],
 
@@ -36,15 +40,15 @@
     "beSkills": [
         {
             "category": "Relationnel",
-            "description": "J'ai le sens du travail d'équipe, et sais former et diriger une équipe au besoin. Au fil de mes expériences, j'ai développé un bon relationnel client, qu'il soit particulier ou professionnel, je sais l'impliquer dans les projets qu'il me confie, instaurant une relation de confiance."
+            "description": "J'ai suis quelqu'un qui sait travailler en équipe, être à l'écoute et faire preuve d'empathie. Mon sens du service me permet d'identifier (voire d'anticiper) les besoins de chacun et d'apporter des réponses adaptées afin de les satisfaire. Au besoin, je peux également faire preuve de leadership en mobilisant et entraînant une équipe dans la poursuite d'un objectif partagé."
         },
         {
             "category": "Professionnel",
-            "description": "Autonome et persévérante, je sais m'adapter et m'organiser sur mon travail. Ouverte au dialogue, j'accepte volontiers la critique constructive, et respecte les directives que l'on me donne."
+            "description": "Dans mon travail je sais faire preuve d'autonomie, de curiosité, de persévérance, de rigueur et de précision, ainsi que de réactivité. J'organise mon travail selon les priorités et les objectifs"
         },
         {
             "category": "Emotionnel",
-            "description": "Je suis à l'écoute de mon équipe ou du client, je ne perd pas mon sang-froid face à la difficulté et sais prendre du recul pour résoudre les problèmes complexes."
+            "description": "Je sais gérer mon stress, m'adapter au changement et être créative. Je peux être force de proposition et prendre des initiatives si je me sens assez confiante dans mon sujet."
         }
     ]
 }

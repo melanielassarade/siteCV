@@ -1,6 +1,6 @@
 <!-- EXPCard.vue -->
 <template>
-  <q-card dark bordered :class="cardClass" class="col-12 col-md-5 col-lg-3">
+  <q-card dark bordered :class="cardClass" class="q-col-12 q-col-md-5 q-col-lg-3">
     <q-card-section>
       <!--Contenu textuel card-->
       <div class="text-h6">{{ experience.title }}</div>
