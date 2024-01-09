@@ -49,7 +49,7 @@
     <section class="row justify-center">
         <transition appear enter-active-class="animated fadeIn slow delay-4s">
             <div class="q-pa-lg full-width" style="max-width: 60vw;">
-                <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+                <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md" action="http://localhost:3000/send-email" method="POST">
                     <q-input
                         v-model="name" label="Votre nom *" hint="Nom et prénom" lazy-rules :rules="[ 
                             val => val && val.length > 0 || 'Merci de remplir ce champs'
@@ -76,58 +76,7 @@
     </section>
 </template>
 
-<!-- Script d'origine
-    
-<script>
-    import { useQuasar } from 'quasar'
-    import { ref } from 'vue'
-
-    export default {
-        setup () {
-            const $q = useQuasar()
-            const name = ref(null)
-            const email = ref(null)
-            const accept = ref(false)
-
-            return {
-                tab: ref('mail'),
-                name,
-                email,
-                accept,
-
-                onSubmit () {
-                    if (accept.value !== true) {
-                    $q.notify({
-                        color: 'red-5',
-                        textColor: 'white',
-                        icon: 'warning',
-                        message: 'Vous devez accepter de communiquer vos données.'
-                    })
-                    }
-                    else {
-                    $q.notify({
-                        color: 'green-4',
-                        textColor: 'white',
-                        icon: 'cloud_done',
-                        message: 'Message envoyé'
-                    })
-                    }
-                },
-
-                onReset () {
-                    customText.value = null
-                    name.value = null
-                    email.value = null
-                    accept.value = false
-                }
-            }
-        }
-    }
-</script>
--->
-
-<!--Transformation en script setup-->
-<script setup>
+<!--<script setup>
     import { useQuasar } from 'quasar'
     import { ref } from 'vue'
 
@@ -161,4 +110,44 @@
         customText.value = null
         accept.value = false
     }
+</script>-->
+
+<script setup>
+    import { ref } from 'vue';
+
+    const name = ref('');
+    const email = ref('');
+    const customText = ref('');
+
+    const onSubmit = () => {
+    const formData = {
+        name: name.value,
+        email: email.value,
+        customText: customText.value
+    };
+
+    fetch('/send-email', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+        // Succès : Message envoyé avec succès
+        } else {
+        // Erreur : Impossible d'envoyer le message
+        }
+    })
+    .catch(error => {
+        console.error('Erreur lors de l\'envoi du message:', error);
+    });
+    };
+
+    const onReset = () => {
+    name.value = '';
+    email.value = '';
+    customText.value = '';
+    };
 </script>
