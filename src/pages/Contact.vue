@@ -71,46 +71,39 @@
                         <q-btn label="Vider les champs" type="reset" color="primary" flat class="q-ml-sm" />
                     </div>
                 </q-form>
+                <q-list>
+                    <div class="q-pa-md" style="max-width: 300px">
+                        <q-input filled v-model="date">
+                            <template v-slot:prepend>
+                            <q-icon name="event" class="cursor-pointer">
+                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <q-date v-model="date" mask="YYYY-MM-DD HH:mm" landscape>
+                                    <div class="row items-center justify-end">
+                                    <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </q-date>
+                                </q-popup-proxy>
+                            </q-icon>
+                            </template>
+                    
+                            <template v-slot:append>
+                            <q-icon name="access_time" class="cursor-pointer">
+                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <q-time v-model="date" mask="YYYY-MM-DD HH:mm" format24h landscape>
+                                    <div class="row items-center justify-end">
+                                    <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </q-time>
+                                </q-popup-proxy>
+                            </q-icon>
+                            </template>
+                        </q-input>
+                    </div>
+                </q-list>
             </div>
         </transition>
     </section>
 </template>
-
-<!--<script setup>
-    import { useQuasar } from 'quasar'
-    import { ref } from 'vue'
-
-    const $q = useQuasar()
-    const name = ref(null)
-    const email = ref(null)
-    const accept = ref(false)
-    const tab = ref('mail')
-
-    const onSubmit = () => {
-        if (accept.value !== true) {
-        $q.notify({
-            color: 'red-5',
-            textColor: 'white',
-            icon: 'warning',
-            message: 'Vous devez accepter de communiquer vos données.'
-        })
-        } else {
-        $q.notify({
-            color: 'green-4',
-            textColor: 'white',
-            icon: 'cloud_done',
-            message: 'Message envoyé'
-        })
-        }
-    }
-
-    const onReset = () => {
-        name.value = null
-        email.value = null
-        customText.value = null
-        accept.value = false
-    }
-</script>-->
 
 <script setup>
     import { ref } from 'vue';
@@ -118,6 +111,7 @@
     const name = ref('');
     const email = ref('');
     const customText = ref('');
+    const date = ref('01-12-2024 12:44');
 
     const onSubmit = () => {
     const formData = {
