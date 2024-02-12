@@ -16,19 +16,16 @@
                         <q-tab class="text-orange" name="tel" label="Téléphone" />
                         <q-tab class="text-secondary" name="rs" label="Réseaux Sociaux" />
                     </q-tabs>
-
                     <div class="q-gutter-y-sm">
                         <q-tab-panels v-model="tab" animated transition-prev="scale" transition-next="scale" class="text-white text-center rounded-borders">
                             <q-tab-panel name="mail" class="bg-primary q-pa-md">
                                 <div class="text-h6">Email</div>
                                 <a class="text-white text-h6" style="text-decoration: none;" href="mailto:melanie.lassarade@gmail.com">melanie.lassarade@gmail.com</a>
                             </q-tab-panel>
-                    
                             <q-tab-panel name="tel" class="bg-orange q-pa-md">
                                 <div class="text-h6">Téléphone</div>
                                 <a class="text-white text-h6" style="text-decoration: none;" href="tel:+33686321802">06.86.32.18.02</a>
                             </q-tab-panel>
-                    
                             <q-tab-panel name="rs" class="bg-secondary q-pa-md">
                                 <div class="text-h6">Réseaux Sociaux</div>
                                 <div class="flex justify-evenly">
@@ -71,47 +68,18 @@
                         <q-btn label="Vider les champs" type="reset" color="primary" flat class="q-ml-sm" />
                     </div>
                 </q-form>
-                <q-list>
-                    <div class="q-pa-md" style="max-width: 300px">
-                        <q-input filled v-model="date">
-                            <template v-slot:prepend>
-                            <q-icon name="event" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                <q-date v-model="date" mask="YYYY-MM-DD HH:mm" landscape>
-                                    <div class="row items-center justify-end">
-                                    <q-btn v-close-popup label="Close" color="primary" flat />
-                                    </div>
-                                </q-date>
-                                </q-popup-proxy>
-                            </q-icon>
-                            </template>
-                    
-                            <template v-slot:append>
-                            <q-icon name="access_time" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                <q-time v-model="date" mask="YYYY-MM-DD HH:mm" format24h landscape>
-                                    <div class="row items-center justify-end">
-                                    <q-btn v-close-popup label="Close" color="primary" flat />
-                                    </div>
-                                </q-time>
-                                </q-popup-proxy>
-                            </q-icon>
-                            </template>
-                        </q-input>
-                    </div>
-                </q-list>
             </div>
         </transition>
     </section>
 </template>
 
 <script setup>
-    import { ref } from 'vue';
+    import { ref } from 'vue'
 
-    const name = ref('');
-    const email = ref('');
-    const customText = ref('');
-    const date = ref('01-12-2024 12:44');
+    const tab = ref('mail')
+    const name = ref('')
+    const email = ref('')
+    const customText = ref('')
 
     const onSubmit = () => {
     const formData = {
@@ -140,8 +108,8 @@
     };
 
     const onReset = () => {
-    name.value = '';
-    email.value = '';
-    customText.value = '';
+    name.value = ''
+    email.value = ''
+    customText.value = ''
     };
 </script>
