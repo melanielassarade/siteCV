@@ -63,3 +63,31 @@
         EXPCard
     };
 </script>
+<!-- Modele d'importation d'API à reproduire pour les exp
+<script setup>
+    import { ref } from 'vue'
+    import { api } from 'boot/axios'
+    import { useQuasar } from 'quasar'
+    import SkillsList from 'src/components/SkillsList.vue'
+
+    //Props    
+    const $q = useQuasar()
+    let knowSkills = ref([])
+    let doSkills = ref([])
+    let beSkills = ref([])
+    const tab = ref('know')
+    const splitterModel = ref(20)
+
+    // Functions
+    function loadData () {
+        api.get('https://api.npoint.io/e66b2086122ba0135bf0')
+        .then((response) => {
+            const skillsData = response.data
+            knowSkills.value = skillsData.knowSkills 
+            doSkills.value = skillsData.doSkills 
+            beSkills.value = skillsData.beSkills
+        })
+    }
+    loadData()
+</script>
+-->

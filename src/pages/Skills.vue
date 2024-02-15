@@ -1,5 +1,4 @@
 <template>
-
     <q-page class="q-pa-xl">
         <q-page-section id="headerSkillsPage">
             <transition appear enter-active-class="animated slideInDown slow delay-1s">
@@ -24,12 +23,10 @@
                                     <div v-if="knowSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-lightbulb"/> Mes connaissances</div>
                                     <SkillsList :skills="knowSkills" />
                                 </q-tab-panel>
-                        
                                 <q-tab-panel name="do">
                                     <div v-if="doSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-gears"/> Mon savoir-faire</div>
                                     <SkillsList :skills="doSkills" />
                                 </q-tab-panel>
-                    
                                 <q-tab-panel name="be">
                                     <div v-if="beSkills.length > 0" class="text-h5 q-mb-md text-primary"><i class="fa-solid fa-users"/> Mon savoir-être</div>
                                     <SkillsList :skills="beSkills" />
@@ -44,16 +41,28 @@
 </template>
 
 <script setup>
+    import { ref } from 'vue'
+    import { api } from 'boot/axios'
+    import { useQuasar } from 'quasar'
+    import SkillsList from 'src/components/SkillsList.vue'
 
-    import { ref } from 'vue';
-    import skillsData from 'src/data/skillsData.json';
-    import SkillsList from 'src/components/SkillsList.vue';
-
-    const tab = ref('know');
-    const splitterModel = ref(20);
-
-    const knowSkills = ref(skillsData.knowSkills || []);
-    const doSkills = ref(skillsData.doSkills || []);
-    const beSkills = ref(skillsData.beSkills || []);
-
+    //Props    
+    const $q = useQuasar()
+    let knowSkills = ref([])
+    let doSkills = ref([])
+    let beSkills = ref([])
+    const tab = ref('know')
+    const splitterModel = ref(20)
+    
+    // Functions
+    function loadData () {
+        api.get('https://api.npoint.io/e66b2086122ba0135bf0')
+        .then((response) => {
+            const skillsData = response.data
+            knowSkills.value = skillsData.knowSkills 
+            doSkills.value = skillsData.doSkills 
+            beSkills.value = skillsData.beSkills
+        })
+    }
+    loadData()
 </script>

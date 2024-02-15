@@ -10,14 +10,13 @@
     </q-list>
 </template>
     
-    <script setup>
-        import { defineProps } from 'vue';
-    
-        const props = defineProps({
-            skills: {
-                type: Array,
-                required: true
-            }
-        });
-    </script>
+<script setup>
+    import { defineProps } from 'vue'
+    const props = defineProps({
+        skills: {
+            type: Array,
+            required: true
+        }
+    })
+</script>
     
