@@ -1,17 +1,19 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const cors = require('cors')
 const bodyParser = require('body-parser');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors())
 
 const transporter = nodemailer.createTransport({
-host: 'smtp.mailtrap.io',
-port: 2525,
-auth: {
-    user: '',
-    pass: ''
-}
+    host: "sandbox.smtp.mailtrap.io",
+    port: 2525,
+    auth: {
+        user: "af19fae377ed79",
+        pass: "60f217e059b5a6"
+    }
 });
 
 app.post('/send-email', (req, res) => {

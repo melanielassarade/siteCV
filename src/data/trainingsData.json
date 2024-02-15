@@ -1,43 +1,43 @@
 [
-  {
-      "title": "Baccalauréat Littéraire",
-      "subtitle": "2006",
-      "side": "left",
-      "icon": "fa-solid fa-graduation-cap",
-      "description": "spécialité mathématiques et option arts plastiques au lycée privé Jeanne d'Arc à Millau (12)"
-  },
-  {
-      "title": "Mise à niveau en Arts Appliqués",
-      "subtitle": "2007",
-      "side": "right",
-      "description": "à l'Ecole Supérieur des Métiers d'Arts de Montpellier (34)"
-  },
-  {
-      "title": "BTS Communication Visuelle options graphisme édition et publicité",
-      "subtitle": "2009",
-      "side": "left",
-      "icon": "fa-solid fa-graduation-cap",
-      "description": "à l'Institut Professionnel de l'Enseignement Supérieur des Arts Appliqués à Montpellier (34)"
-  },
-  {
-      "title": "Titre Professionnel niv III (équivalent BTS) Designer Web",
-      "subtitle": "2019",
-      "side": "right",
-      "icon": "fa-solid fa-graduation-cap",
-      "description": "à BGE Sud Ouest à Toulouse (31)"
-  },
-  {
-      "title": "Formation professionnelle Conducteur Livreur sur Véhicules Utilitaires Légers",
-      "subtitle": "2020-2021",
-      "side": "left",
-      "description": "Formation continue en contrat de professionnalisation avec le groupe La Poste à Millau (12) et avec l'AFPA d'Albi (81)"
-  },
-  {
-      "title": "Titre professionnel de niv III (équivalent BTS) Développeur Web et Web Mobile (en cours)",
-      "subtitle": "2024",
-      "side": "right",
-      "icon": "fa-solid fa-school",
-      "color": "primary",
-      "description": "à l'antenne AFPA de Rodez à Millau (12)"
-  }
+    {
+        "title": "Baccalauréat Littéraire",
+        "subtitle": "2006",
+        "side": "left",
+        "icon": "fa-solid fa-graduation-cap",
+        "description": "spécialité mathématiques et option arts plastiques au lycée privé Jeanne d'Arc à Millau (12)"
+    },
+    {
+        "title": "Mise à niveau en Arts Appliqués",
+        "subtitle": "2007",
+        "side": "right",
+        "description": "à l'Ecole Supérieur des Métiers d'Arts de Montpellier (34)"
+    },
+    {
+        "title": "BTS Communication Visuelle options graphisme édition et publicité",
+        "subtitle": "2009",
+        "side": "left",
+        "icon": "fa-solid fa-graduation-cap",
+        "description": "à l'Institut Professionnel de l'Enseignement Supérieur des Arts Appliqués à Montpellier (34)"
+    },
+    {
+        "title": "Titre Professionnel niv III (équivalent BTS) Designer Web",
+        "subtitle": "2019",
+        "side": "right",
+        "icon": "fa-solid fa-graduation-cap",
+        "description": "à BGE Sud Ouest à Toulouse (31)"
+    },
+    {
+        "title": "Formation professionnelle Conducteur Livreur sur Véhicules Utilitaires Légers",
+        "subtitle": "2020-2021",
+        "side": "left",
+        "description": "Formation continue en contrat de professionnalisation avec le groupe La Poste à Millau (12) et avec l'AFPA d'Albi (81)"
+    },
+    {
+        "title": "Titre professionnel de niv III (équivalent BTS) Développeur Web et Web Mobile (en cours)",
+        "subtitle": "2024",
+        "side": "right",
+        "icon": "fa-solid fa-school",
+        "color": "primary",
+        "description": "à l'antenne AFPA de Rodez à Millau (12)"
+    }
 ]

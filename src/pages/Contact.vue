@@ -46,6 +46,12 @@
     <section class="row justify-center">
         <transition appear enter-active-class="animated fadeIn slow delay-4s">
             <div class="q-pa-lg full-width" style="max-width: 60vw;">
+                <div v-if="successMessage" class="bg-light-green-9 text-white text-center q-pa-md q-ma-xs">
+                    {{ successMessage }}
+                </div>
+                <div v-if="errorMessage" class="bg-red-9 text-white text-center q-pa-md q-ma-xs">
+                    {{ errorMessage }}
+                </div>
                 <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md" action="http://localhost:3000/send-email" method="POST">
                     <q-input
                         v-model="name" label="Votre nom *" hint="Nom et prénom" lazy-rules :rules="[ 
@@ -61,7 +67,10 @@
                         val => val && val.length > 0 || 'Merci de remplir ce champs'
                     ]"/>
                 
-                    <q-toggle v-model="accept" label="J'accepte de communiquer mes données à Mélanie LASSARADE" />
+                    <div v-if="!agreeToggle" class="text-red text-center q-pa-none q-ma-none">Veuillez accepter les conditions pour envoyer le message.</div>
+                    <q-toggle :label="agreeToggle ? 'Je suis d\'accord' : 'Je ne suis pas d\'accord'" color="green" v-model="agreeToggle" class="q-pa-none q-ma-none">
+                        de communiquer mes données à Mélanie LASSARADE exclusivement.
+                    </q-toggle>
                 
                     <div class="flex justify-center">
                         <q-btn label="Envoyer" type="submit" color="primary"/>
@@ -74,42 +83,57 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+import { ref } from 'vue'
 
-    const tab = ref('mail')
-    const name = ref('')
-    const email = ref('')
-    const customText = ref('')
+const successMessage = ref('')
+const errorMessage = ref('')
 
-    const onSubmit = () => {
+const tab = ref('mail')
+const name = ref('')
+const email = ref('')
+const customText = ref('')
+const agreeToggle = ref(false)
+
+const onSubmit = () => {
     const formData = {
         name: name.value,
         email: email.value,
-        customText: customText.value
-    };
+        customText: customText.value,
+        agreeToggle: agreeToggle.value
+    }
 
-    fetch('/send-email', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => {
-        if (response.ok) {
-        // Succès : Message envoyé avec succès
-        } else {
-        // Erreur : Impossible d'envoyer le message
-        }
-    })
-    .catch(error => {
-        console.error('Erreur lors de l\'envoi du message:', error);
-    });
-    };
+    if (agreeToggle.value) {
+        fetch('http://localhost:3000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'http://localhost:9000',
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest',
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            if (response.ok) {
+                successMessage.value = 'Message envoyé avec succès!'
+                errorMessage.value = '' // Efface les messages d'erreur précédents s'il y en a
+            } else {
+                errorMessage.value = 'Erreur lors de l\'envoi du message. Veuillez vérifier vos réponses.'
+                successMessage.value = '' // Efface les messages de succès précédents s'il y en a
+            }
+        })
+        .catch(error => {
+            errorMessage.value = 'Erreur lors de l\'envoi du message:' + error
+        })
+    } else {
+        errorMessage.value = 'Veuillez accepter les conditions pour envoyer le message.'
+    }
+}
 
-    const onReset = () => {
+const onReset = () => {
     name.value = ''
     email.value = ''
     customText.value = ''
-    };
+    agreeToggle.value = false
+}
 </script>

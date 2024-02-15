@@ -1,5 +1,40 @@
 <template>
-    
+
+    <section id="startedDialog">    
+        <q-dialog v-model="dialogVisible">
+            <q-card>
+                <q-card-section>
+                <div class="text-h6">Bienvenue sur mon site CV !</div>
+                </q-card-section>
+                <q-card-section class="q-pt-none">
+                    <p>Ce site a été réalisé dans le cadre du stage chez Kalisio au cours de ma formation de Développeuse Web fin 2023.</p>
+                </q-card-section>
+                <q-card-actions align="right" class="text-primary">
+                <q-btn flat label="En savoir plus" @click="secondDialog = true" />
+                <q-btn flat label="Fermer" v-close-popup />
+                </q-card-actions>
+            </q-card>
+        </q-dialog>
+        <q-dialog v-model="secondDialog" persistent transition-show="scale" transition-hide="scale">
+            <q-card class="bg-teal text-white" style="width: 600px">
+                <q-card-section>
+                <div class="text-h6">Résumé du projet</div>
+                </q-card-section>
+                <q-card-section class="q-pt-none">
+                    <p>Le projet de création d'un site CV avec Quasar, le framework principal de Kalisio, vise à explorer les potentialités de cette technologie en vue d'une future collaboration avec l'entreprise. Dans ce contexte, nous débutons par une présentation de Kalisio, soulignant son engagement envers les open data et les technologies open source pour le développement d'applications géomatiques.</p>
+                    <p class="text-right">Nous mettons en avant les compétences développées grâce à ce projet, notamment dans la manipulation des données géospatiales et la création d'interfaces utilisateur réactives. En explorant les technologies utilisées telles que Vue.js et Quasar, nous identifions les avantages de leur adoption et leur fonctionnement dans le cadre du développement web moderne.</p>
+                    <p>Le cœur du projet réside dans l'utilisation de Quasar, qui offre une gamme étendue de composants et une structure cohérente pour le développement d'applications web. Nous décrivons l'arborescence classique de Quasar et les principaux composants utilisés dans notre site CV, ainsi que les étapes d'installation du framework.</p>
+                    <p class="text-right">Nous détaillons ensuite les aspects spécifiques du cas d'utilisation du site CV, notamment la gestion des pages et des routes, l'intégration d'animations, et le traitement des données JSON pour le stockage des informations du CV et la gestion du formulaire de contact.</p>  
+                    <p>Enfin, nous explorons l'adaptation du code et des composants personnalisés, à travers l'exemple de "KTimeControl", démontrant ainsi notre capacité à répondre aux besoins spécifiques de Kalisio.</p>
+                    <p class="text-right">Ce projet illustre non seulement notre volonté de nous approprier les technologies clés pour une future collaboration avec Kalisio, mais également notre engagement à développer des compétences transversales essentielles dans le domaine du développement web moderne.</p>
+                </q-card-section>
+                <q-card-actions align="right" class="bg-white text-teal">
+                <q-btn flat label="OK" v-close-popup />
+                </q-card-actions>
+            </q-card>
+        </q-dialog>
+    </section>
+
     <section id="carouselMenu">
         <q-carousel height="80vh" animated v-model="slide" arrows navigation infinite>
             <q-carousel-slide name="one" img-src="/img/background_photo_mel.jpg" class="column">
@@ -57,6 +92,7 @@
             </div>
         </div>
     </section>
+
     <section id="origins" class="row q-pa-xl q-col-gutter-md parallax" style="background-image: url('https://cdn.pixabay.com/photo/2019/07/14/16/37/landscape-4337546_1280.jpg');">
         <div class="col-12 flex flex-middle flex-center">
             <div class="text-accent text-center text-h6" style="background-color: rgba(0,0,0,0.3); border-radius: 5px;">
@@ -66,6 +102,7 @@
             </div>
         </div> 
     </section>
+
     <section id="rewards" class="row q-pa-xl q-col-gutter-md">
         <div class="col-12 col-md-8 flex flex-middle flex-center">
             <div style="font-size: 18px">
@@ -99,14 +136,19 @@
             <div class="text-h4">Collaboratrice<br>certifiée<br>conforme !</div>
         </div>
     </section>
-    
-
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+    import { ref, onMounted } from 'vue'
 
     const slide = ref('one')
+    const dialogVisible = ref(false)
+    const inception = ref(false)
+    const secondDialog = ref(false)
+
+    onMounted(() => {
+    dialogVisible.value = true
+    })
 </script>
 
 <style lang="sass" scoped>
