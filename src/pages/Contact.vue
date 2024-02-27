@@ -62,7 +62,7 @@
                         val => val !== null && val !== '' || 'Merci de remplir ce champs',
                         val => val !== '@' && val !== '.' || 'Merci de mettre un mail valide'
                     ]"/>
-
+                    
                     <q-input type="textarea" label="Votre message *" v-model="customText" autogrow lazy-rules :rules="[ 
                         val => val && val.length > 0 || 'Merci de remplir ce champs'
                     ]"/>
@@ -87,7 +87,6 @@ import { ref } from 'vue'
 
 const successMessage = ref('')
 const errorMessage = ref('')
-
 const tab = ref('mail')
 const name = ref('')
 const email = ref('')
@@ -129,7 +128,6 @@ const onSubmit = () => {
         errorMessage.value = 'Veuillez accepter les conditions pour envoyer le message.'
     }
 }
-
 const onReset = () => {
     name.value = ''
     email.value = ''

@@ -20,16 +20,20 @@
                 <q-card-section>
                 <div class="text-h6">Résumé du projet</div>
                 </q-card-section>
-                <q-card-section class="q-pt-none">
-                    <p>Le projet de création d'un site CV avec Quasar, le framework principal de Kalisio, vise à explorer les potentialités de cette technologie en vue d'une future collaboration avec l'entreprise. Dans ce contexte, nous débutons par une présentation de Kalisio, soulignant son engagement envers les open data et les technologies open source pour le développement d'applications géomatiques.</p>
-                    <p class="text-right">Nous mettons en avant les compétences développées grâce à ce projet, notamment dans la manipulation des données géospatiales et la création d'interfaces utilisateur réactives. En explorant les technologies utilisées telles que Vue.js et Quasar, nous identifions les avantages de leur adoption et leur fonctionnement dans le cadre du développement web moderne.</p>
-                    <p>Le cœur du projet réside dans l'utilisation de Quasar, qui offre une gamme étendue de composants et une structure cohérente pour le développement d'applications web. Nous décrivons l'arborescence classique de Quasar et les principaux composants utilisés dans notre site CV, ainsi que les étapes d'installation du framework.</p>
-                    <p class="text-right">Nous détaillons ensuite les aspects spécifiques du cas d'utilisation du site CV, notamment la gestion des pages et des routes, l'intégration d'animations, et le traitement des données JSON pour le stockage des informations du CV et la gestion du formulaire de contact.</p>  
-                    <p>Enfin, nous explorons l'adaptation du code et des composants personnalisés, à travers l'exemple de "KTimeControl", démontrant ainsi notre capacité à répondre aux besoins spécifiques de Kalisio.</p>
-                    <p class="text-right">Ce projet illustre non seulement notre volonté de nous approprier les technologies clés pour une future collaboration avec Kalisio, mais également notre engagement à développer des compétences transversales essentielles dans le domaine du développement web moderne.</p>
+                <q-card-section class="q-pt-none text-center">
+                    <p>
+                        Lors de mon stage en entreprise chez Kalisio, j’ai pu développer mon projet "Site CV avec Quasar et Vue.js" qui est une exploration approfondie des technologies modernes du développement web.
+                    </p>
+                    <p>    
+                        Le cas d'utilisation avec le site CV explore en détails les différentes étapes de la création d'un CV en ligne, de la gestion des pages et des routes à l'intégration de composants personnalisés, en passant par les animations, le traitement et la sécurisation des données.
+                    </p>
+                    <p>
+                        Ce projet passionnant représente pour moi une opportunité précieuse me permettant par la suite de travailler avec Kalisio.           
+                    </p>
                 </q-card-section>
                 <q-card-actions align="right" class="bg-white text-teal">
-                <q-btn flat label="OK" v-close-popup />
+                    <q-btn flat href="https://www.canva.com/design/DAF9aMRe1w8/tRn5ZVCb9aHF2aYuJS0sCQ/view?utm_content=DAF9aMRe1w8&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" label="Mon dossier de projet" />
+                    <q-btn flat label="OK" v-close-popup />
                 </q-card-actions>
             </q-card>
         </q-dialog>
